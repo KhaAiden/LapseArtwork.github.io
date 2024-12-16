@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapse - Art Gallery</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff; /* White background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 3.5rem;
+            margin-top: 30px;
+            color: #4a4a4a;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Light text-shadow */
+        }
+
+        /* Artist Statement Section */
+        .statement {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            line-height: 1.6;
+            padding: 0 20px;
+            font-style: italic;
+        }
+
+        /* Gallery Layout */
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        /* Gallery Rows (1-4 and 5-8) */
+        .gallery-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Image Styling */
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd; /* Added sharp edges with border */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        /* Hover effect on images */
+        .gallery img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Image Container Styling */
+        .image-container {
+            width: 280px;
+            margin: 10px;
+        }
+
+        /* Progress Section Styling */
+        .progress-section {
+            margin-top: 80px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 80%;
+            max-width: 1000px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            text-align: left;
+        }
+
+        /* Progress Section Heading */
+        .progress-section h2 {
+            font-size: 2.5rem;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Progress Gallery Layout */
+        .progress-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Progress Images Styling */
+        .progress-gallery img {
+            width: 45%; /* Adjusted width for only two images */
+            border: 2px solid #ddd; /* Sharp-edged border for progress images */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        /* Hover effect on progress images */
+        .progress-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lapse</h1>
+
+    <!-- Artist Statement -->
+    <div class="statement">
+        <p>
+            Reflections of forgotten photographs are reimagined through glitch art, transforming past imperfections into bold, captivating expressions of creativity.
+        </p>
+    </div>
+
+    <!-- Artworks Gallery -->
+    <div class="gallery">
+        <!-- First Row of Artworks (1-4) -->
+        <div class="gallery-row">
+            <div class="image-container">
+                <img src="Deer_Hills_Glitch_1.jpg" alt="Hills">
+            </div>
+            <div class="image-container">
+                <img src="Fish_Glitch.jpg" alt="Fish">
+            </div>
+            <div class="image-container">
+                <img src="Flowers_Glitch_1.jpg" alt="Flowers">
+            </div>
+            <div class="image-container">
+                <img src="Water_Glitch_1.jpg" alt="River">
+            </div>
+        </div>
+
+        <!-- Second Row of Artworks (5-8) -->
+        <div class="gallery-row">
+            <div class="image-container">
+                <img src="Hills_Framed.jpg" alt="Hills_Framed">
+            </div>
+            <div class="image-container">
+                <img src="Fish_Framed.jpg" alt="Fish_Framed">
+            </div>
+            <div class="image-container">
+                <img src="Flower_Framed.jpg" alt="Flower_Framed">
+            </div>
+            <div class="image-container">
+                <img src="River_Framed.jpg" alt="River_Framed">
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Section -->
+    <div class="progress-section">
+        <h2>Creative Process</h2>
+        <div class="progress-gallery">
+            <!-- Only two images for progress -->
+            <div>
+                <img src="print_short.jpg" alt="short">
+            </div>
+            <div>
+                <img src="printed.jpg" alt="printed">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
